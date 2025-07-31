@@ -10,7 +10,7 @@ from utils import sanitize_input, error_response
 app = Flask(__name__)
 
 # Allow frontend requests
-CORS(app, resources={r"/search": {"origins": ["http://localhost:3000", "http://127.0.0.1:3000"]}})
+CORS(app, resources={r"/search": {"origins": ["https://shunyatax.in"]}})
 
 # Rate limiting
 limiter = Limiter(
